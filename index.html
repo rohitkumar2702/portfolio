@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rohit Kumar — Java Developer Portfolio</title>
+  <meta name="description"
+    content="Portfolio of Rohit Kumar, a passionate Java Developer and Computer Science student skilled in Java, Python, C++, and web development." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Cursor Glow -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- Particles Background -->
+  <canvas id="particleCanvas"></canvas>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>RK<span class="logo-bracket"> /&gt;</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="hero-greeting">
+          <span class="greeting-line"></span>
+          Hello, I'm
+        </p>
+        <h1 class="hero-name">
+          Rohit<br /><span class="name-highlight">Kumar</span>
+        </h1>
+        <div class="hero-title-wrapper">
+          <span class="hero-title-label">I am a</span>
+          <span class="hero-title" id="typedText"></span>
+          <span class="typed-cursor">|</span>
+        </div>
+        <p class="hero-description">
+          Enthusiastic Computer Science undergraduate passionate about building
+          robust software solutions. Specializing in Java development with a
+          strong foundation in DSA and OOP.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">
+            <span>View Projects</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="m6 17 5-5-5-5" />
+              <path d="m13 17 5-5-5-5" />
+            </svg>
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <span>Get In Touch</span>
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-number" data-count="8.2">0</span>
+            <span class="stat-label">CGPA</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-number" data-count="4">0</span>
+            <span class="stat-label">Languages</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-number" data-count="2">0</span>
+            <span class="stat-label">Projects</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="avatar-container">
+          <div class="avatar-ring"></div>
+          <div class="avatar-ring avatar-ring-2"></div>
+          <div class="avatar-initials">RK</div>
+          <div class="avatar-orbit">
+            <div class="orbit-dot" style="--delay: 0s;"><span>☕</span></div>
+            <div class="orbit-dot" style="--delay: -2s;"><span>⚡</span></div>
+            <div class="orbit-dot" style="--delay: -4s;"><span>🚀</span></div>
+          </div>
+        </div>
+        <div class="floating-card card-1">
+          <span class="card-icon">☕</span>
+          <span>Java</span>
+        </div>
+        <div class="floating-card card-2">
+          <span class="card-icon">🐍</span>
+          <span>Python</span>
+        </div>
+        <div class="floating-card card-3">
+          <span class="card-icon">🌐</span>
+          <span>Web Dev</span>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll Down</span>
+      <div class="scroll-arrow">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 5v14M19 12l-7 7-7-7" />
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// INTRODUCTION</span>
+        <h2 class="section-title">About <span class="highlight">Me</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm a B.Tech Computer Science student at <strong>Gandhi Engineering College, Odisha</strong>,
+            expected to graduate in <strong>2027</strong>. With a current CGPA of <strong>8.2/10</strong>,
+            I'm building a solid academic foundation while pursuing practical software development skills.
+          </p>
+          <p>
+            My journey in tech started with curiosity about how software systems work, which quickly
+            turned into a passion for building them. I specialize in <strong>Java development</strong>
+            and enjoy solving complex problems through clean, efficient code.
+          </p>
+          <p>
+            I'm seeking an entry-level Software Engineer role where I can apply my programming
+            knowledge, problem-solving skills, and passion for software development to contribute
+            to innovative projects.
+          </p>
+          <div class="about-info-grid">
+            <div class="info-item">
+              <span class="info-label">Name</span>
+              <span class="info-value">Rohit Kumar</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Email</span>
+              <span class="info-value">rohitkumar270206@gmail.com</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Location</span>
+              <span class="info-value">Odisha, India</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Degree</span>
+              <span class="info-value">B.Tech in CS</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-card">
+          <div class="code-window">
+            <div class="code-header">
+              <div class="code-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <span class="code-filename">RohitKumar.java</span>
+            </div>
+            <pre class="code-body"><code><span class="code-keyword">public class</span> <span class="code-class">RohitKumar</span> {
+
+  <span class="code-keyword">String</span> role = <span class="code-string">"Java Developer"</span>;
+  <span class="code-keyword">String</span> college = <span class="code-string">"Gandhi Engg."</span>;
+  <span class="code-keyword">double</span> cgpa = <span class="code-number">8.2</span>;
+
+  <span class="code-keyword">String</span>[] skills = {
+    <span class="code-string">"Java"</span>, <span class="code-string">"Python"</span>,
+    <span class="code-string">"C++"</span>, <span class="code-string">"JavaScript"</span>,
+    <span class="code-string">"MySQL"</span>, <span class="code-string">"MongoDB"</span>
+  };
+
+  <span class="code-keyword">boolean</span> hireable = <span class="code-number">true</span>;
+
+  <span class="code-keyword">public void</span> <span class="code-function">sayHello</span>() {
+    System.out.println(
+      <span class="code-string">"Let's build something!"</span>
+    );
+  }
+}</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// MY EXPERTISE</span>
+        <h2 class="section-title">Technical <span class="highlight">Skills</span></h2>
+      </div>
+      <div class="skills-grid">
+        <!-- Programming Languages -->
+        <div class="skill-category">
+          <div class="skill-category-header">
+            <div class="skill-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="16 18 22 12 16 6" />
+                <polyline points="8 6 2 12 8 18" />
+              </svg>
+            </div>
+            <h3>Languages</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item" data-level="90">
+              <div class="skill-item-header">
+                <span class="skill-name">☕ Java</span>
+                <span class="skill-percent">90%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" style="--fill: 90%"></div>
+              </div>
+            </div>
+            <div class="skill-item" data-level="75">
+              <div class="skill-item-header">
+                <span class="skill-name">🐍 Python</span>
+                <span class="skill-percent">75%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" style="--fill: 75%"></div>
+              </div>
+            </div>
+            <div class="skill-item" data-level="70">
+              <div class="skill-item-header">
+                <span class="skill-name">⚙️ C++</span>
+                <span class="skill-percent">70%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" style="--fill: 70%"></div>
+              </div>
+            </div>
+            <div class="skill-item" data-level="65">
+              <div class="skill-item-header">
+                <span class="skill-name">✨ JavaScript</span>
+                <span class="skill-percent">65%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" style="--fill: 65%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Web Development -->
+        <div class="skill-category">
+          <div class="skill-category-header">
+            <div class="skill-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10" />
+                <line x1="2" y1="12" x2="22" y2="12" />
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+              </svg>
+            </div>
+            <h3>Web Development</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item" data-level="85">
+              <div class="skill-item-header">
+                <span class="skill-name">🏗️ HTML</span>
+                <span class="skill-percent">85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" style="--fill: 85%"></div>
+              </div>
+            </div>
+            <div class="skill-item" data-level="80">
+              <div class="skill-item-header">
+                <span class="skill-name">🎨 CSS</span>
+                <span class="skill-percent">80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" style="--fill: 80%"></div>
+              </div>
+            </div>
+            <div class="skill-item" data-level="65">
+              <div class="skill-item-header">
+                <span class="skill-name">✨ JavaScript</span>
+                <span class="skill-percent">65%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" style="--fill: 65%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Databases -->
+        <div class="skill-category">
+          <div class="skill-category-header">
+            <div class="skill-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <ellipse cx="12" cy="5" rx="9" ry="3" />
+                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+              </svg>
+            </div>
+            <h3>Databases</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item" data-level="75">
+              <div class="skill-item-header">
+                <span class="skill-name">🐬 MySQL</span>
+                <span class="skill-percent">75%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" style="--fill: 75%"></div>
+              </div>
+            </div>
+            <div class="skill-item" data-level="60">
+              <div class="skill-item-header">
+                <span class="skill-name">🍃 MongoDB</span>
+                <span class="skill-percent">60%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" style="--fill: 60%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Concepts & Tools -->
+        <div class="skill-category">
+          <div class="skill-category-header">
+            <div class="skill-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+              </svg>
+            </div>
+            <h3>Concepts & Tools</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-chip-grid">
+              <span class="skill-chip">Data Structures</span>
+              <span class="skill-chip">Algorithms</span>
+              <span class="skill-chip">OOP</span>
+              <span class="skill-chip">Git</span>
+              <span class="skill-chip">Problem Solving</span>
+              <span class="skill-chip">CRUD Operations</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// WHAT I'VE BUILT</span>
+        <h2 class="section-title">Academic <span class="highlight">Projects</span></h2>
+      </div>
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <div class="project-image">
+            <div class="project-image-placeholder">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="project-tag">Java</span>
+              <span class="project-tag">MySQL</span>
+              <span class="project-tag">CRUD</span>
+            </div>
+            <h3 class="project-title">Student Management System</h3>
+            <p class="project-description">
+              A full-featured CRUD application for managing student records with
+              authentication and MySQL database integration. Supports creating,
+              reading, updating, and deleting student information through an
+              intuitive interface.
+            </p>
+            <div class="project-features">
+              <span>✦ User Authentication</span>
+              <span>✦ Database Integration</span>
+              <span>✦ CRUD Operations</span>
+              <span>✦ Record Management</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Middlecla" class="project-link" target="_blank" rel="noopener noreferrer">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                </svg>
+                <span>Source Code</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <div class="project-image">
+            <div class="project-image-placeholder">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                <line x1="8" y1="21" x2="16" y2="21" />
+                <line x1="12" y1="17" x2="12" y2="21" />
+              </svg>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="project-tag">HTML</span>
+              <span class="project-tag">CSS</span>
+              <span class="project-tag">JavaScript</span>
+            </div>
+            <h3 class="project-title">Portfolio Website</h3>
+            <p class="project-description">
+              A responsive personal portfolio website designed to showcase academic
+              projects, technical skills, and professional journey. Features modern
+              design with smooth animations and interactive elements.
+            </p>
+            <div class="project-features">
+              <span>✦ Responsive Design</span>
+              <span>✦ Smooth Animations</span>
+              <span>✦ Modern UI/UX</span>
+              <span>✦ Interactive Elements</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Middlecla" class="project-link" target="_blank" rel="noopener noreferrer">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                </svg>
+                <span>Source Code</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section class="section section-alt" id="education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// ACADEMIC JOURNEY</span>
+        <h2 class="section-title">My <span class="highlight">Education</span></h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-badge">2023 – 2027</div>
+            <h3>Bachelor of Technology in Computer Science</h3>
+            <h4>Gandhi Engineering College, Odisha</h4>
+            <p>Current CGPA: <strong>8.2 / 10</strong></p>
+            <p>Studying core CS subjects including Data Structures, Algorithms, OOP, Database Management Systems, and
+              Software Engineering.</p>
+            <div class="timeline-tags">
+              <span>DSA</span>
+              <span>OOP</span>
+              <span>DBMS</span>
+              <span>Software Engineering</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// EXPERIENCE</span>
+        <h2 class="section-title">Internship & <span class="highlight">Training</span></h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-badge">6 Weeks</div>
+            <h3>Summer Training — Web Development</h3>
+            <h4>Web Development Program</h4>
+            <p>Completed a comprehensive 6-week training program covering front-end technologies including HTML, CSS,
+              and JavaScript, along with basic backend integration techniques.</p>
+            <div class="timeline-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>Backend Basics</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Soft Skills -->
+      <div class="soft-skills-section">
+        <h3 class="soft-skills-title">Soft Skills</h3>
+        <div class="soft-skills-grid">
+          <div class="soft-skill-card">
+            <div class="soft-skill-icon">🧠</div>
+            <h4>Analytical Thinking</h4>
+            <p>Strong analytical and problem-solving mindset</p>
+          </div>
+          <div class="soft-skill-card">
+            <div class="soft-skill-icon">💬</div>
+            <h4>Communication</h4>
+            <p>Effective communication and teamwork abilities</p>
+          </div>
+          <div class="soft-skill-card">
+            <div class="soft-skill-icon">📚</div>
+            <h4>Continuous Learner</h4>
+            <p>Willingness to learn and adopt new technologies</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// LET'S CONNECT</span>
+        <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+        <p class="section-subtitle">Feel free to reach out for collaborations, opportunities, or just a friendly chat
+          about tech!</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-card">
+            <div class="contact-card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+            </div>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:rohitkumar270206@gmail.com">rohitkumar270206@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg>
+            </div>
+            <div>
+              <h4>Phone</h4>
+              <a href="tel:+916204719015">+91-6204719015</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                <rect x="2" y="9" width="4" height="12" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+            </div>
+            <div>
+              <h4>LinkedIn</h4>
+              <a href="https://www.linkedin.com/in/rohit-kumar-611456306" target="_blank"
+                rel="noopener noreferrer">Rohit Kumar</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+              </svg>
+            </div>
+            <div>
+              <h4>GitHub</h4>
+              <a href="https://github.com/Middlecla" target="_blank" rel="noopener noreferrer">Middlecla</a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-wrapper">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <input type="text" id="formName" placeholder=" " required />
+              <label for="formName">Your Name</label>
+            </div>
+            <div class="form-group">
+              <input type="email" id="formEmail" placeholder=" " required />
+              <label for="formEmail">Your Email</label>
+            </div>
+            <div class="form-group">
+              <input type="text" id="formSubject" placeholder=" " />
+              <label for="formSubject">Subject</label>
+            </div>
+            <div class="form-group">
+              <textarea id="formMessage" rows="5" placeholder=" " required></textarea>
+              <label for="formMessage">Your Message</label>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <span>Send Message</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="22" y1="2" x2="11" y2="13" />
+                <polygon points="22 2 15 22 11 13 2 9 22 2" />
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <span class="logo-bracket">&lt;</span>RK<span class="logo-bracket"> /&gt;</span>
+        </div>
+        <p class="footer-text">Designed & Built by Rohit Kumar</p>
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/in/rohit-kumar-611456306" target="_blank" rel="noopener noreferrer"
+            aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+              <rect x="2" y="9" width="4" height="12" />
+              <circle cx="4" cy="4" r="2" />
+            </svg>
+          </a>
+          <a href="https://github.com/Middlecla" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+            </svg>
+          </a>
+          <a href="mailto:rohitkumar270206@gmail.com" aria-label="Email">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+          </a>
+        </div>
+        <p class="footer-copy">&copy; 2025 Rohit Kumar. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
